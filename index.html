@@ -24,9 +24,9 @@
             </div>
 
             <div>
-                <svg class="w-20 cursor-pointer relative md:hidden" width="105px" height="105px" viewBox="-2 -2 24.00 24.00"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="0.12"
-                    transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" onclick="toggleMenu()">
+                <svg class="w-20 cursor-pointer relative md:hidden" width="105px" height="105px"
+                    viewBox="-2 -2 24.00 24.00" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff"
+                    stroke-width="0.12" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" onclick="toggleMenu()">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
                         stroke-width="0.04"></g>
@@ -56,7 +56,8 @@
                         </a>
                     </ul>
 
-                    <ul class="flex flex-col gap-2 bg-[#000000a6] p-5 hidden absolute top-24 mr-2 rounded-md md:hidden" id="navigationBarMobile">
+                    <ul id="navigationBarMobile"
+                        class="flex flex-col gap-2 bg-[#000000a6] p-5 hidden absolute left-60 top-24 mr-2 rounded-md md:hidden">
                         <a href="">
                             <li>Home</li>
                         </a>
@@ -72,6 +73,10 @@
                         <a href="">
                             <li>Contact Us</li>
                         </a>
+                        <div class="register text-xs font-normal">
+                            <button class="signIn mb-2">Log In</button>
+                            <button class="register">Register</button>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -80,11 +85,6 @@
                 <div class="register hidden md:flex">
                     <button class="signIn">Log In</button>
                     <button class="register">Register</button>
-                </div>
-                <div class="register flex flex-col hidden gap-2 md:hidden">
-                    <button class="signIn">Log In</button>
-                    <button class="register">Register</button>
-    
                 </div>
             </div>
         </header>
