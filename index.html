@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitulum</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="public/utilities.js"></script>
 </head>
@@ -91,7 +92,7 @@
 
 
         <main>
-            <section id="homeSection">
+            <section id="homeSection" class="hidden">
                 <div class="md:w-[600px] mt-24">
                     <div>
                         <h1 class='font-semibold text-[40px] md:text-6xl text-white'>The Tulum Marketing & <span
@@ -381,7 +382,8 @@
                 <div class="mt-24 text-white mb-20">
                     <div class="text-center">
                         <h3 class="font-semibold lg:text-6xl mb-5">Our Story</h3>
-                        <p class="font-normal text-xl md:w-96 mx-auto mb-10">Lorem ipsum dolor sit amet consectetur. Dictum
+                        <p class="font-normal text-xl md:w-96 mx-auto mb-10">Lorem ipsum dolor sit amet consectetur.
+                            Dictum
                             vel mi amet rhoncus velit. </p>
                     </div>
 
@@ -400,7 +402,8 @@
                         </div>
 
                         <div>
-                            <p class="font-normal md:text-xl mt-5">Lorem ipsum dolor sit amet consectetur. Dictum vel mi amet rhoncus velit. Convallis enim
+                            <p class="font-normal md:text-xl mt-5">Lorem ipsum dolor sit amet consectetur. Dictum vel mi
+                                amet rhoncus velit. Convallis enim
                                 nulla elementum convallis ornare. Consectetur Lorem ipsum dolor sit amet consectetur.
                                 Dictum vel mi amet rhoncus velit. Convallis enim nulla elementum convallis ornare.
                                 Consectetur Lorem ipsum dolor sit amet consectetur. Dictum vel mi amet rhoncus velit.
@@ -414,6 +417,75 @@
                     </div>
                 </div>
             </section>
+
+            <section id="contact">
+                <div class="mt-24">
+                    <div class="text-white text-center my-5">
+                        <h1 class="font-semibold text-3xl lg:text-6xl">Contact Us</h1>
+                    </div>
+
+                    <div class="lg:flex">
+                        <div>
+                            <div class="my-10">
+                                <h3 class="text-[#D8B841] font-semibold text-2xl lg:text-6xl">FAQ</h3>
+                                <p class="text-[#929598] font-normal md:text-xl my-5">You can see the questions that are
+                                    usually asked when you first see Gawee, maybe they can represent the questions you
+                                    have for us.</p>
+                            </div>
+                            <div class="register my-5">
+                                <button>Contact Us</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mt-10">
+                                <div class="join join-vertical w-full">
+                                    <div class="collapse collapse-arrow join-item border border-base-300 bg-[#D8B841]">
+                                        <input type="radio" name="my-accordion-4" checked="checked" />
+                                        <div class="collapse-title font-semibold text-base">
+                                            What is Tulum
+                                        </div>
+                                        <div class="collapse-content">
+                                            <p class="text-white font-normal text-sm">Our modern co-working space is not just a place to work; it's a curated environment crafted to elevate your productivity and foster meaningful connections.</p>
+                                        </div>
+                                    </div>
+                                    <div class="collapse collapse-arrow join-item border border-base-300 bg-[#D8B841]">
+                                        <input type="radio" name="my-accordion-4" checked="checked" />
+                                        <div class="collapse-title font-semibold text-base">
+                                            How is a co-working space different from other regular offices?
+                                        </div>
+                                        <div class="collapse-content">
+                                            <p class="text-white font-normal text-sm">Immerse in tailored programs that hone skills and foster a winning
+                                                mindset, ensuring peak performance on the ice.</p>
+                                        </div>
+                                    </div>
+                                    <div class="collapse collapse-arrow join-item border border-base-300 bg-[#D8B841]">
+                                        <input type="radio" name="my-accordion-4" checked="checked" />
+                                        <div class="collapse-title font-semibold text-base">
+                                            How do I book a place at Gawee?
+                                        </div>
+                                        <div class="collapse-content">
+                                            <p class="text-white font-normal text-sm">Unlock your full potential with one-on-one coaching, tailored to refine
+                                                skills and accelerate your hockey journey</p>
+                                        </div>
+                                    </div>
+                                    <div class="collapse collapse-arrow join-item border border-base-300 bg-[#D8B841]">
+                                        <input type="radio" name="my-accordion-4" checked="checked" />
+                                        <div class="collapse-title font-semibold text-base">
+                                            What are the benefits of being a Gawee member?
+                                        </div>
+                                        <div class="collapse-content">
+                                            <p class="text-white font-normal text-sm">Experience the thrill of uncharted slopes with our guided tours, blending
+                                                adventure and nature for an unforgettable skiing escapade.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
         </main>
     </div>
 </body>
