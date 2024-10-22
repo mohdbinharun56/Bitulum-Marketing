@@ -3,6 +3,11 @@ function toggleMenu(){
     document.getElementById('registerNavigationBarMobile').classList.toggle('hidden');
 }
 
+function service(){
+    document.getElementById('homeSection').classList.add('hidden');
+    document.getElementById('servicesSection').classList.remove('hidden');
+}
+
 
 // function home  (){
 //     const homeElement = document.createElement('div');

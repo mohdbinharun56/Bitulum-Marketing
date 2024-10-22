@@ -42,7 +42,7 @@
                         <a href="" class="text-[#D9B742]">
                             <li>Home</li>
                         </a>
-                        <a href="">
+                        <a onclick="service()">
                             <li>Service Overview</li>
                         </a>
                         <a href="">
@@ -91,7 +91,7 @@
 
 
         <main>
-            <section id="homeSection" class="hidden">
+            <section id="homeSection">
                 <div class="md:w-[600px] mt-24">
                     <div>
                         <h1 class='font-semibold text-[40px] md:text-6xl text-white'>The Tulum Marketing & <span
@@ -206,8 +206,147 @@
                 </div>
             </section>
 
-            <section>
+            <section id="servicesSection" class="hidden">
+                <div class="mt-24">
+                    <div class="text-white text-center">
+                        <h1 class="font-semibold text-3xl lg:text-6xl my-5">Services</h1>
+                        <p class="font-normal text-xl w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur. Dictum vel
+                            mi amet rhoncus velit. Convallis enim
+                            nulla elementum convallis ornare. Consectetur </p>
+                    </div>
 
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-20">
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D8B841" />
+                                    <path
+                                        d="M24 25.4299C25.7231 25.4299 27.12 24.0331 27.12 22.3099C27.12 20.5868 25.7231 19.1899 24 19.1899C22.2769 19.1899 20.88 20.5868 20.88 22.3099C20.88 24.0331 22.2769 25.4299 24 25.4299Z"
+                                        stroke="white" stroke-width="1.5" />
+                                    <path
+                                        d="M15.62 20.49C17.59 11.83 30.42 11.84 32.38 20.5C33.53 25.58 30.37 29.88 27.6 32.54C25.59 34.48 22.41 34.48 20.39 32.54C17.63 29.88 14.47 25.57 15.62 20.49Z"
+                                        stroke="white" stroke-width="1.5" />
+                                </svg>
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">50+ Location</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">Gawee is spread across more than 50 big
+                                cities throughout Indonesia.</p>
+                        </div>
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D9B742" />
+                                    <path
+                                        d="M21.5 25.75C21.5 26.72 22.25 27.5 23.17 27.5H25.05C25.85 27.5 26.5 26.82 26.5 25.97C26.5 25.06 26.1 24.73 25.51 24.52L22.5 23.47C21.91 23.26 21.51 22.94 21.51 22.02C21.51 21.18 22.16 20.49 22.96 20.49H24.84C25.76 20.49 26.51 21.27 26.51 22.24"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24 19.5V28.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M34 24C34 29.52 29.52 34 24 34C18.48 34 14 29.52 14 24C14 18.48 18.48 14 24 14"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M29 15V19H33" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M34 14L29 19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">Affordable Price</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">Starting from just $15 per month, you
+                                can enjoy a workplace with a great vibes.</p>
+                        </div>
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D8B841" />
+                                    <path
+                                        d="M24 27C27.7279 27 30.75 24.0899 30.75 20.5C30.75 16.9101 27.7279 14 24 14C20.2721 14 17.25 16.9101 17.25 20.5C17.25 24.0899 20.2721 27 24 27Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19.52 25.52L19.51 32.9C19.51 33.8 20.14 34.24 20.92 33.87L23.6 32.6C23.82 32.49 24.19 32.49 24.41 32.6L27.1 33.87C27.87 34.23 28.51 33.8 28.51 32.9V25.34"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">100% Recommended</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">A calming atmosphere allows you to work
+                                more productively.</p>
+                        </div>
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D9B742" />
+                                    <path
+                                        d="M24 25.43C25.7231 25.43 27.12 24.0331 27.12 22.31C27.12 20.5869 25.7231 19.19 24 19.19C22.2769 19.19 20.88 20.5869 20.88 22.31C20.88 24.0331 22.2769 25.43 24 25.43Z"
+                                        stroke="white" stroke-width="1.5" />
+                                    <path
+                                        d="M15.62 20.49C17.59 11.83 30.42 11.84 32.38 20.5C33.53 25.58 30.37 29.88 27.6 32.54C25.59 34.48 22.41 34.48 20.39 32.54C17.63 29.88 14.47 25.57 15.62 20.49Z"
+                                        stroke="white" stroke-width="1.5" />
+                                </svg>
+
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">50+ Location</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">Gawee is spread across more than 50 big
+                                cities throughout Indonesia.</p>
+                        </div>
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D9B742" />
+                                    <path
+                                        d="M21.5 25.75C21.5 26.72 22.25 27.5 23.17 27.5H25.05C25.85 27.5 26.5 26.82 26.5 25.97C26.5 25.06 26.1 24.73 25.51 24.52L22.5 23.47C21.91 23.26 21.51 22.94 21.51 22.02C21.51 21.18 22.16 20.49 22.96 20.49H24.84C25.76 20.49 26.51 21.27 26.51 22.24"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M24 19.5V28.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M34 24C34 29.52 29.52 34 24 34C18.48 34 14 29.52 14 24C14 18.48 18.48 14 24 14"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M29 15V19H33" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M34 14L29 19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">Affordable Price</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">Starting from just $15 per month, you
+                                can enjoy a workplace with a great vibes.</p>
+                        </div>
+                        <div class="bg-[#2E2E2E] p-6 border-2 border-[#D9B742] rounded-2xl">
+                            <figure class="my-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" rx="8" fill="#D8B841" />
+                                    <path
+                                        d="M24 27C27.7279 27 30.75 24.0899 30.75 20.5C30.75 16.9101 27.7279 14 24 14C20.2721 14 17.25 16.9101 17.25 20.5C17.25 24.0899 20.2721 27 24 27Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19.52 25.52L19.51 32.9C19.51 33.8 20.14 34.24 20.92 33.87L23.6 32.6C23.82 32.49 24.19 32.49 24.41 32.6L27.1 33.87C27.87 34.23 28.51 33.8 28.51 32.9V25.34"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                            </figure>
+                            <h3 class="text-white font-semibold text-6">100% Recommended</h3>
+                            <p class="font-normal text-base text-[#929598] my-5">A calming atmosphere allows you to work
+                                more productively.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
