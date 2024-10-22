@@ -3,23 +3,30 @@ function toggleMenu(){
     document.getElementById('registerNavigationBarMobile').classList.toggle('hidden');
 }
 
-function service(){
-    document.getElementById('homeSection').classList.add('hidden');
-    document.getElementById('servicesSection').classList.remove('hidden');
+const service = () => {
+    const homeSectionElement = document.getElementById('homeSection');
+    const servicesSectionElement =  document.getElementById('servicesSection');
+    const serviceNav = document.getElementById('service');
+    const homeNav = document.getElementById('home');
+
+    homeSectionElement.classList.add('hidden');
+    servicesSectionElement.classList.remove('hidden');
+    homeNav.style.color = '#929598';
+    serviceNav.style.color = '#D9B742';
+    
+
+
 }
 
+const home=()=>{
+    const homeSectionElement = document.getElementById('homeSection');
+    const servicesSectionElement =  document.getElementById('servicesSection');
+    const serviceNav = document.getElementById('service');
+    const homeNav = document.getElementById('home');
 
-// function home  (){
-//     const homeElement = document.createElement('div');
-//     homeElement.classList.add('homeContainer');
-
-//     homeElement.innerHTML = `
-//     <h1 class='font-semibold text-6xl text-white'>The Tulum Marketing & <span class='text-[#D9B742]'>Creative Agency</span></h1>
-//     `;
-
-//     document.getElementById('homeSection').appendChild(homeElement);
-
-// }
-
-
-// export default home;
+    servicesSectionElement.classList.add('hidden');
+    homeSectionElement.classList.remove('hidden');
+    serviceNav.style.color = '#929598';
+    homeNav.style.color = '#D9B742';
+    
+}
