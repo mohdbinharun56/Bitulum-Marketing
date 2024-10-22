@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="container w-full">
+    <div class="container">
         <header>
-            <div class="title-container">
+            <div class="flex gap-2 items-center">
                 <div class="logo">
-                    <img src="public/assets/Bitulum_LOGO.png" alt="Bitulum_LOGO" width="50px" height="54px">
+                    <img src="public/assets/Bitulum_LOGO.png" alt="Bitulum_LOGO" class="w-12 h-14">
                 </div>
                 <div class="title">
                     <h1>BI'TULUM</h1>
@@ -24,7 +24,7 @@
             </div>
 
             <div>
-                <svg class="w-20 cursor-pointer relative md:hidden" width="105px" height="105px"
+                <svg class="w-20 cursor-pointer relative lg:hidden" width="105px" height="105px"
                     viewBox="-2 -2 24.00 24.00" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff"
                     stroke-width="0.12" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" onclick="toggleMenu()">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -38,7 +38,7 @@
                 </svg>
 
                 <nav>
-                    <ul class="hidden md:flex">
+                    <ul class="hidden lg:flex">
                         <a href="" class="text-[#D9B742]">
                             <li>Home</li>
                         </a>
@@ -57,7 +57,7 @@
                     </ul>
 
                     <ul id="navigationBarMobile"
-                        class="flex flex-col gap-2 bg-[#000000a6] p-5 hidden absolute left-60 top-24 mr-2 rounded-md md:hidden">
+                        class="flex flex-col gap-2 bg-[#000000a6] p-5 hidden absolute left-60 top-24 mr-2 rounded-md lg:hidden">
                         <a href="" class="text-[#D9B742]">
                             <li>Home</li>
                         </a>
@@ -82,7 +82,7 @@
             </div>
 
             <div>
-                <div class="register hidden md:flex">
+                <div class="register hidden lg:flex">
                     <button class="signIn">Log In</button>
                     <button class="register">Register</button>
                 </div>
@@ -93,13 +93,17 @@
         <main>
             <section id="homeSection">
                 <div class="md:w-[600px] mt-24">
-                    <h1 class='font-semibold text-[40px] md:text-6xl text-white'>The Tulum Marketing & <span
-                            class='text-[#D9B742]'>Creative Agency</span></h1>
-                    <p class="text-[#929598] font-normal text-base my-5">Lorem ipsum dolor sit amet consectetur. Dictum
-                        vel mi amet rhoncus velit. Convallis enim nulla
-                        elementum convallis ornare. Consectetur eget turpis pellentesque condimentum faucibus faucibus
-                        nibh porttitor. Risus tellus mauris elit in nunc.
-                    </p>
+                    <div>
+                        <h1 class='font-semibold text-[40px] md:text-6xl text-white'>The Tulum Marketing & <span
+                                class='text-[#D9B742]'>Creative Agency</span></h1>
+                        <p class="text-[#929598] font-normal text-base my-5">Lorem ipsum dolor sit amet consectetur.
+                            Dictum
+                            vel mi amet rhoncus velit. Convallis enim nulla
+                            elementum convallis ornare. Consectetur eget turpis pellentesque condimentum faucibus
+                            faucibus
+                            nibh porttitor. Risus tellus mauris elit in nunc.
+                        </p>
+                    </div>
 
                     <div class="mr-3">
                         <button
@@ -121,22 +125,84 @@
                                     alt="user" class=" w-9 h-9 rounded-full border-2 border-white">
                             </figure>
                             <figure>
-                                <img src="https://s3-alpha-sig.figma.com/img/113f/a25a/235312cc53dcd4c8780648145d59e3c2?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YFqFKRuHyJiRnYh-0mKyDgMPo2XjkEDpEgPLjKVzd2insoX8F~FnWVB2vOzTsD~Y4FbBCqjYQ-FJHNAH0poMjiC5WZF25~3MFJxAMgxlZP2BkKO9KQY7y~YFN4qmQzYkEsvIOgR~O0nh71iMl6jj5picMfo9rTgyS~XSa7m3TDqws6wsHTfWoBzhnpB6kDED08EUGPkqcEFT5BWaNibu8EWmG6UGQ-7bFqtXu0QHpQaxDKlkcHL7VKrsWwFFoa5V771UenYtODw41IqyemNYF44SBeRFo2WksD0j74MGzgpPAzHTiMZ5qrUWsl2V81H0Wl~R8aML5~zAkC2YqgaclQ__" 
+                                <img src="https://s3-alpha-sig.figma.com/img/113f/a25a/235312cc53dcd4c8780648145d59e3c2?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YFqFKRuHyJiRnYh-0mKyDgMPo2XjkEDpEgPLjKVzd2insoX8F~FnWVB2vOzTsD~Y4FbBCqjYQ-FJHNAH0poMjiC5WZF25~3MFJxAMgxlZP2BkKO9KQY7y~YFN4qmQzYkEsvIOgR~O0nh71iMl6jj5picMfo9rTgyS~XSa7m3TDqws6wsHTfWoBzhnpB6kDED08EUGPkqcEFT5BWaNibu8EWmG6UGQ-7bFqtXu0QHpQaxDKlkcHL7VKrsWwFFoa5V771UenYtODw41IqyemNYF44SBeRFo2WksD0j74MGzgpPAzHTiMZ5qrUWsl2V81H0Wl~R8aML5~zAkC2YqgaclQ__"
                                     alt="user" class=" w-9 h-9 rounded-full border-2 border-white">
                             </figure>
                             <figure>
-                                <img src="https://s3-alpha-sig.figma.com/img/a199/2e88/9a5031c397ec01c174d1a2dfe00d87ac?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AZ7K5JRLqSaRU~LOrbEgquakVlv-4yvwCBOXp58Noex04YYuOJWF7iIqnCnfNC5PPgEK1sh02q0Q5xLQFcNwycks1vcfaoeNX3sdPqFR18eBHpSuxnhsAmu5tIsMOr3DpwAFd1xwO4hA-o~8POWnx88uhbFO~STy0jlvEQZV0uiNmiNty0cKlAus-Gzv-6FvXgdTcS~NcHYej9pUm3-8RYGWhvo2Bh1Xa5HPE9hIauc0QGnHSpZXhSJ6q8KrowuUW~4tmhU2ih4L8xgtaVfTVOYXwWUOD~k-OczHzrbvj5JcBucg9iGy-U-5oTugfA8SiAkFrl~acl~~mRca9xMtWA__" 
+                                <img src="https://s3-alpha-sig.figma.com/img/a199/2e88/9a5031c397ec01c174d1a2dfe00d87ac?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AZ7K5JRLqSaRU~LOrbEgquakVlv-4yvwCBOXp58Noex04YYuOJWF7iIqnCnfNC5PPgEK1sh02q0Q5xLQFcNwycks1vcfaoeNX3sdPqFR18eBHpSuxnhsAmu5tIsMOr3DpwAFd1xwO4hA-o~8POWnx88uhbFO~STy0jlvEQZV0uiNmiNty0cKlAus-Gzv-6FvXgdTcS~NcHYej9pUm3-8RYGWhvo2Bh1Xa5HPE9hIauc0QGnHSpZXhSJ6q8KrowuUW~4tmhU2ih4L8xgtaVfTVOYXwWUOD~k-OczHzrbvj5JcBucg9iGy-U-5oTugfA8SiAkFrl~acl~~mRca9xMtWA__"
                                     alt="user" class=" w-9 h-9 rounded-full border-2 border-white">
                             </figure>
                             <div>
-                                <p class=" w-9 h-9 rounded-full border-2 border-white relative bg-[#D9B742]"><span class="absolute left-1 bottom-1 font-normal text-base text-white">99+</span></p>
+                                <p class=" w-9 h-9 rounded-full border-2 border-white relative bg-[#D9B742]">
+                                    <span class="absolute left-1 bottom-1 font-normal text-base text-white">
+                                        99+
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div>
                             <p class="text-[#929598] font-normal text-base ">And 100+ people have tried our service</p>
                         </div>
                     </div>
+                </div>
 
+                <div class="bg-[#2E2E2E] border-2 border-[#D9B742] rounded-2xl py-16 px-12 my-20">
+                    <p class="text-center text-[#B6B7BA]">vTrusted by over 100+ top companies in Hibrida</p>
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center items-center my-8">
+                        <figure class="flex items-center gap-3">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.157 4.55588C8.4779 5.72704 6.95955 7.11172 5.64148 8.67046C11.0277 8.17164 17.8708 8.98615 25.8154 12.9486C34.2993 17.1799 41.1309 17.323 45.8854 16.4082C45.4539 15.1052 44.9108 13.853 44.2675 12.6626C38.8249 13.2352 31.8475 12.4773 23.716 8.42177C18.5524 5.84639 14.0007 4.78551 10.157 4.55588ZM41.0882 8.1486C36.7901 3.35838 30.5441 0.34375 23.5921 0.34375C21.5505 0.34375 19.5696 0.603778 17.6812 1.09241C20.2388 1.78853 22.9558 2.80695 25.8154 4.23323C31.7689 7.20251 36.9088 8.15857 41.0882 8.1486ZM46.9019 20.9815C41.158 22.1129 33.2264 21.8805 23.716 17.1372C14.8249 12.7027 7.74831 12.7585 2.97562 13.8165C2.72927 13.8711 2.48872 13.9284 2.25397 13.9881C1.62911 15.3437 1.13032 16.7692 0.772439 18.2495C1.15468 18.1476 1.54966 18.0508 1.95719 17.9604C7.7473 16.677 15.9282 16.7327 25.8154 21.664C34.7067 26.0985 41.7832 26.0427 46.556 24.9847C46.7195 24.9485 46.8806 24.9111 47.0391 24.8724C47.0564 24.5033 47.0651 24.1318 47.0651 23.7584C47.0651 22.8188 47.0097 21.8922 46.9019 20.9815ZM46.2727 29.8137C40.5846 30.8057 32.8839 30.425 23.716 25.8526C14.8249 21.4181 7.74831 21.4739 2.97562 22.5319C1.91622 22.7666 0.963201 23.0526 0.122503 23.3546C0.120211 23.4889 0.119064 23.6235 0.119064 23.7584C0.119064 36.6899 10.6283 47.173 23.5921 47.173C34.4567 47.173 43.5973 39.8101 46.2727 29.8137Z"
+                                    fill="#B6B7BA" />
+                            </svg>
+                            <h3 class="text-[#B6B7BA] font-bold text-xl">Logoipsum</h3>
+                        </figure>
+                        <figure class="flex items-center gap-3">
+                            <svg width="48" height="30" viewBox="0 0 48 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M30.0462 1.31435L25.4343 0.0805664L21.5478 14.562L18.0389 1.48807L13.4269 2.72185L17.218 16.8473L7.77532 7.41986L4.39913 10.7906L14.7566 21.1315L1.85803 17.6808L0.622253 22.2853L14.7155 26.0556C14.5542 25.3607 14.4688 24.6367 14.4688 23.8929C14.4688 18.6274 18.7442 14.3589 24.0181 14.3589C29.2921 14.3589 33.5675 18.6274 33.5675 23.8929C33.5675 24.6319 33.4832 25.3515 33.3238 26.0422L46.132 29.4686L47.3677 24.8641L33.2184 21.0789L46.1178 17.628L44.882 13.0236L30.7333 16.8085L40.1759 7.38115L36.7997 4.0104L26.5859 14.2077L30.0462 1.31435Z"
+                                    fill="#B6B7BA" />
+                            </svg>
+
+                            <h3 class="text-[#B6B7BA] font-bold text-3xl">Logoipsum</h3>
+                        </figure>
+                        <figure class="flex items-center gap-3">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.5 48C37.7552 48 48.5 37.2552 48.5 24V7.2C48.5 5.29044 47.7414 3.45909 46.3912 2.10883C45.0409 0.758569 43.2096 0 41.3 0L25.7 0V10.5288C25.7 12.9312 25.8464 15.42 27.1064 17.4648C28.0084 18.9303 29.2151 20.1845 30.6446 21.1426C32.0741 22.1006 33.6929 22.7399 35.3912 23.0172L35.8508 23.0916C36.0403 23.1564 36.2048 23.2788 36.3212 23.4416C36.4377 23.6045 36.5003 23.7998 36.5003 24C36.5003 24.2002 36.4377 24.3955 36.3212 24.5584C36.2048 24.7212 36.0403 24.8436 35.8508 24.9084L35.3912 24.9828C32.9098 25.3882 30.6184 26.5627 28.8406 28.3405C27.0627 30.1184 25.8882 32.4098 25.4828 34.8912L25.4084 35.3508C25.3436 35.5403 25.2213 35.7048 25.0584 35.8212C24.8955 35.9377 24.7002 36.0003 24.5 36.0003C24.2998 36.0003 24.1045 35.9377 23.9417 35.8212C23.7788 35.7048 23.6564 35.5403 23.5916 35.3508L23.5172 34.8912C23.2399 33.1929 22.6005 31.5741 21.6425 30.1447C20.6845 28.7152 19.4302 27.5085 17.9648 26.6064C15.92 25.3464 13.4312 25.2 11.0288 25.2H0.528809C1.15641 37.8972 11.648 48 24.5 48Z"
+                                    fill="#B6B7BA" />
+                            </svg>
+
+
+                            <h3 class="text-[#B6B7BA] font-bold text-xl">Logoipsum</h3>
+                        </figure>
+                        <figure class="flex items-center gap-3">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2805 47.2076C37.2106 47.2076 47.6923 36.7246 47.6923 23.793C47.6923 10.8615 37.2106 0.378418 24.2805 0.378418C11.3506 0.378418 0.868774 10.8615 0.868774 23.793C0.868774 36.7246 11.3506 47.2076 24.2805 47.2076ZM27.8941 18.4692C29.8897 16.4732 29.8897 13.2372 27.8941 11.2412C25.8984 9.24528 22.6627 9.24528 20.667 11.2412C18.6714 13.2372 18.6714 16.4732 20.667 18.4692L24.2805 22.0831L27.8941 18.4692ZM29.6037 27.4071C31.5995 29.403 34.8351 29.403 36.8308 27.4071C38.8265 25.4111 38.8265 22.1751 36.8308 20.1791C34.8351 18.1832 31.5995 18.1832 29.6037 20.1791L25.9903 23.7931L29.6037 27.4071ZM27.8941 36.3449C29.8897 34.3489 29.8897 31.1129 27.8941 29.1169L24.2805 25.503L20.667 29.1169C18.6714 31.1129 18.6714 34.3489 20.667 36.3449C22.6627 38.3409 25.8984 38.3409 27.8941 36.3449ZM11.7302 27.4071C9.73456 25.4111 9.73456 22.1751 11.7302 20.1791C13.726 18.1832 16.9616 18.1832 18.9574 20.1791L22.5708 23.7931L18.9574 27.4071C16.9616 29.403 13.726 29.403 11.7302 27.4071Z"
+                                    fill="#B6B7BA" />
+                            </svg>
+
+                            <h3 class="text-[#B6B7BA] font-bold text-xl">Logoipsum</h3>
+                        </figure>
+                        <figure class="flex items-center gap-3">
+                            <svg width="48" height="47" viewBox="0 0 48 47" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.2127 46.9909C37.1427 46.9909 47.6245 36.5078 47.6245 23.5762C47.6245 10.6447 37.1427 0.161621 24.2127 0.161621C11.2827 0.161621 0.800903 10.6447 0.800903 23.5762C0.800903 36.5078 11.2827 46.9909 24.2127 46.9909ZM31.5163 11.0691C31.8719 9.80617 30.6464 9.05933 29.5272 9.8568L13.9034 20.9884C12.6897 21.8533 12.8806 23.5762 14.1902 23.5762H18.3044V23.5444H26.3227L19.7893 25.8499L16.909 36.0834C16.5535 37.3464 17.7789 38.0932 18.8982 37.2957L34.5219 26.1641C35.7357 25.2993 35.5447 23.5762 34.2352 23.5762H27.9962L31.5163 11.0691Z"
+                                    fill="#B6B7BA" />
+                            </svg>
+
+                            <h3 class="text-[#B6B7BA] font-bold text-2xl">Logoipsum</h3>
+                        </figure>
+
+                    </div>
                 </div>
             </section>
         </main>
