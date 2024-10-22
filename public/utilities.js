@@ -9,11 +9,13 @@ const service = () => {
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
-
+    const marketingNav = document.getElementById('marketing');
+    
     homeSectionElement.classList.add('hidden');
     sustainableMarketingElement.classList.add('hidden');
     servicesSectionElement.classList.remove('hidden');
     homeNav.style.color = '#929598';
+    marketingNav.style.color = '#929598';
     serviceNav.style.color = '#D9B742';
     
 
@@ -26,11 +28,13 @@ const home=()=>{
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
+    const marketingNav = document.getElementById('marketing');
 
     servicesSectionElement.classList.add('hidden');
-    sustainableMarketingElement.classList.remove('hidden');
+    sustainableMarketingElement.classList.add('hidden');
     homeSectionElement.classList.remove('hidden');
     serviceNav.style.color = '#929598';
+    marketingNav.style.color = '#929598';
     homeNav.style.color = '#D9B742';
     
 }
