@@ -8,6 +8,7 @@ const service = () => {
     const servicesSectionElement =  document.getElementById('servicesSection');
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const ourStoryElement = document.getElementById('ourStory');
+    const contactUsElement = document.getElementById('contactUs');
 
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
@@ -18,6 +19,7 @@ const service = () => {
     homeSectionElement.classList.add('hidden');
     sustainableMarketingElement.classList.add('hidden');
     ourStoryElement.classList.add('hidden');
+    contactUsElement.classList.add('hidden');
     servicesSectionElement.classList.remove('hidden');
     homeNav.style.color = '#929598';
     marketingNav.style.color = '#929598';
@@ -34,6 +36,7 @@ const home=()=>{
     const servicesSectionElement =  document.getElementById('servicesSection');
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const ourStoryElement = document.getElementById('ourStory');
+    const contactUsElement = document.getElementById('contactUs');
 
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
@@ -44,7 +47,9 @@ const home=()=>{
     servicesSectionElement.classList.add('hidden');
     sustainableMarketingElement.classList.add('hidden');
     ourStoryElement.classList.add('hidden');
+    contactUsElement.classList.add('hidden');
     homeSectionElement.classList.remove('hidden');
+
     serviceNav.style.color = '#929598';
     marketingNav.style.color = '#929598';
     storyNav.style.color = '#929598';
@@ -59,6 +64,7 @@ const marketing = ()=>{
     const servicesSectionElement =  document.getElementById('servicesSection');
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const ourStoryElement = document.getElementById('ourStory');
+    const contactUsElement = document.getElementById('contactUs');
 
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
@@ -69,6 +75,7 @@ const marketing = ()=>{
     homeSectionElement.classList.add('hidden');
     servicesSectionElement.classList.add('hidden');
     ourStoryElement.classList.add('hidden');
+    contactUsElement.classList.add('hidden');
     sustainableMarketingElement.classList.remove('hidden');
 
     serviceNav.style.color = '#929598';
@@ -85,6 +92,7 @@ const ourStory = () =>{
     const servicesSectionElement =  document.getElementById('servicesSection');
     const sustainableMarketingElement = document.getElementById('sustainableMarketing');
     const ourStoryElement = document.getElementById('ourStory');
+    const contactUsElement = document.getElementById('contactUs');
 
     const serviceNav = document.getElementById('service');
     const homeNav = document.getElementById('home');
@@ -95,6 +103,7 @@ const ourStory = () =>{
     homeSectionElement.classList.add('hidden');
     servicesSectionElement.classList.add('hidden');
     sustainableMarketingElement.classList.add('hidden');
+    contactUsElement.classList.add('hidden');
     ourStoryElement.classList.remove('hidden');
 
     serviceNav.style.color = '#929598';
